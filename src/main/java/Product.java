@@ -22,8 +22,8 @@ public class Product {
     return price;
   }
 
-/*  @Override
+  @Override
   public String toString() {
     return "Product: " +  id + " " + description + " " + price;
-  }*/
+  }
 }

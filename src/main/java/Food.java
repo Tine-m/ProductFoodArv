@@ -9,9 +9,17 @@ public class Food extends Product{
     this.expirationDate = expirationDate;
   }
 
- // @Override
-  /*public String toString(){
+  public boolean isExpired() {
+    LocalDate today = LocalDate.now();
+    if (today.isAfter(expirationDate)) {
+      return true;
+    }
+    else return false;
+  }
+
+  @Override
+  public String toString(){
    return super.toString() + " " + expirationDate;
     //return "Product: " +  getId() + " " + getDescription() + " " + getPrice() + " " + expirationDate;
-  }*/
+  }
 }
